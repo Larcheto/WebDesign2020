@@ -1,0 +1,29 @@
+navbar {
+    z-index: 3;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    max-width: 2000px;
+}
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: start;
+        margin-top: -0.5rem;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    
+    a{
+        text-decoration: none;
+        font: 1.2em sans-serif;
+        padding: 1rem;
+       // margin: 1rem;
+        color: black;
+        display: inline-block;
+        &:hover{
+            //text-decoration: underline;
+            color: rgb(255, 255, 255);
+            background-color:rgb(52, 140, 143);
+        }
+    }

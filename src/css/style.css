@@ -1,0 +1,30 @@
+navbar {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 2000px; }
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: start;
+  margin-top: -0.5rem;
+  background-color: rgba(255, 255, 255, 0.7); }
+
+a {
+  text-decoration: none;
+  font: 1.2em sans-serif;
+  padding: 1rem;
+  color: black;
+  display: inline-block; }
+  a:hover {
+    color: white;
+    background-color: #348c8f; }
+
+body {
+  background-color: #fcfaf3; }
+
+div {
+  background-image: url("https://images.unsplash.com/photo-1484387436194-cf7cb70800ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"); }
