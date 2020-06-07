@@ -1,0 +1,46 @@
+.about-us-element {
+    margin-top: 6rem;
+    display: flex;
+    width: 100%;
+    img {
+        width: 600px;
+        //display: block;
+        margin-right: 5.5rem;
+        margin-left: 5.5rem;
+    }
+    div{
+        padding: 2rem;
+        background-color:  rgba(255, 255, 255, 0.95);;
+        width: 100%;
+        max-width: 500px;
+        margin-right: 2rem ;
+
+        p{
+            font-size: medium;
+        }
+       
+    }
+}
+@media (max-width: 1200px) {
+    .about-us-element{
+       img{
+            margin-right: 3rem;
+            margin-left: 3rem;
+       }
+    }
+}
+@media (max-width: 1012px) {
+     .about-us-element{
+         display: flex;
+         flex-direction: column;
+
+         img{
+             width: 100%;
+             height: auto;
+             margin-left: 0;
+         }
+         div{
+             max-width: 800px;
+         }
+     }   
+}

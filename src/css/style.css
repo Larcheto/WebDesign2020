@@ -1,30 +1,70 @@
-navbar {
+.navbar {
   z-index: 3;
   position: fixed;
   top: 0;
   right: 0;
-  left: 0;
-  max-width: 2000px; }
+  left: 0; }
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.95); }
+  .navbar .nav-buttons {
+    display: flex;
+    list-style: none;
+    justify-content: start;
+    flex-direction: row; }
+  .navbar a {
+    text-decoration: none;
+    font: 1.2rem sans-serif;
+    padding: 1rem;
+    color: black;
+    display: inline-block; }
+    .navbar a:hover {
+      color: white;
+      background-color: rgba(252, 219, 192, 0.911); }
+  .navbar img {
+    padding-right: 2rem;
+    max-height: 50px; }
 
-ul {
+.about-us-element {
+  margin-top: 6rem;
   display: flex;
-  list-style: none;
-  justify-content: start;
-  margin-top: -0.5rem;
-  background-color: rgba(255, 255, 255, 0.7); }
+  width: 100%; }
+  .about-us-element img {
+    width: 600px;
+    margin-right: 5.5rem;
+    margin-left: 5.5rem; }
+  .about-us-element div {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    max-width: 500px;
+    margin-right: 2rem; }
+    .about-us-element div p {
+      font-size: medium; }
 
-a {
-  text-decoration: none;
-  font: 1.2em sans-serif;
-  padding: 1rem;
-  color: black;
-  display: inline-block; }
-  a:hover {
-    color: white;
-    background-color: #348c8f; }
+@media (max-width: 1200px) {
+  .about-us-element img {
+    margin-right: 3rem;
+    margin-left: 3rem; } }
+
+@media (max-width: 1012px) {
+  .about-us-element {
+    display: flex;
+    flex-direction: column; }
+    .about-us-element img {
+      width: 100%;
+      height: auto;
+      margin-left: 0; }
+    .about-us-element div {
+      max-width: 800px; } }
+
+* {
+  box-sizing: border-box; }
 
 body {
+  margin: 0;
   background-color: #fcfaf3; }
-
-div {
-  background-image: url("https://images.unsplash.com/photo-1484387436194-cf7cb70800ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"); }
