@@ -103,13 +103,44 @@
     width: 100%;
     padding: 1.5rem; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .layout-2 {
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-around; }
     .layout-2 img {
       width: 100%;
       padding-bottom: 2rem; } }
+
+.layout-3 {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("https://images.unsplash.com/photo-1534883031555-7d18c6cf52e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1956&q=80");
+  background-repeat: no-repeat; }
+  .layout-3 .text-element {
+    justify-content: center;
+    color: white;
+    padding: 3rem;
+    margin: 1rem;
+    font-size: x-large;
+    background-color: #f3ceb0;
+    border-radius: 50px; }
+  .layout-3 .email-box {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-style: none;
+    border-radius: 12px; }
+  .layout-3 img {
+    max-width: 900px;
+    padding-left: 3rem;
+    padding-right: 3rem; }
+
+@media (max-width: 670px) {
+  .layout-3 .text-element {
+    font-size: medium; } }
+
+@media (max-width: 390px) {
+  .layout-3 .text-element {
+    font-size: small; } }
 
 * {
   box-sizing: border-box; }
