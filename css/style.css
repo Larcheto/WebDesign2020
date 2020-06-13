@@ -24,7 +24,7 @@
     display: inline-block; }
     .navbar a:hover {
       color: white;
-      background-color: rgba(252, 219, 192, 0.911); }
+      background-color: rgba(245, 201, 165, 0.911); }
   .navbar img {
     padding-right: 2rem;
     max-height: 50px; }
@@ -41,15 +41,13 @@
   width: 100%;
   width: fit-content; }
   .about-us-element h1 {
-    border-bottom: 5px solid #fcdbc0; }
+    border-bottom: 5px solid #f5c9a5; }
   .about-us-element img {
-    box-shadow: 30px 30px #fcdbc0;
+    box-shadow: 30px 30px #f5c9a5;
     width: 600px;
     margin-right: 5.5rem; }
   .about-us-element div {
     padding: 2rem;
-    /*background-color:  rgba(252, 219, 192, 0.911);
-        color: white;*/
     color: black;
     border-radius: 50px;
     width: 100%;
@@ -66,6 +64,7 @@
 
 @media (max-width: 1012px) {
   .about-us-element {
+    padding-top: 3rem;
     display: flex;
     flex-direction: column; }
     .about-us-element img {
@@ -139,11 +138,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly; }
-  .layout-2 img {
-    max-width: 500px;
-    width: 33.3%;
-    padding: 1.5rem;
-    border-radius: 40px; }
+  .layout-2 .image-element {
+    margin: 0; }
+    .layout-2 .image-element img {
+      max-width: 500px;
+      height: 390px;
+      padding: 1.5rem;
+      border-radius: 40px;
+      /*&:hover {
+        }*/ }
 
 @media (max-width: 1024px) {
   .layout-2 {
@@ -154,11 +157,16 @@
       width: 100%;
       padding-bottom: 2rem; } }
 
+@media (max-width: 500px) {
+  .layout-2 .image-element {
+    width: 100%;
+    height: auto; } }
+
 .layout-3 {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 3rem;
-  background-repeat: no-repeat;
   width: 100%; }
   .layout-3 .text-element {
     justify-content: center;
@@ -166,7 +174,7 @@
     padding: 3rem;
     margin: 1rem;
     font-size: x-large;
-    background-color: #f3ceb0;
+    background-color: #f5c9a5;
     border-radius: 50px; }
   .layout-3 .email-box {
     padding: 1rem;
@@ -186,9 +194,60 @@
   .layout-3 .text-element {
     font-size: small; } }
 
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.layout-5 {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  width: fit-content; }
+  .layout-5 img {
+    box-shadow: 30px 30px #f5c9a5;
+    width: 600px;
+    margin-right: 5.5rem; }
+  .layout-5 div {
+    padding: 2rem;
+    margin-right: 3rem;
+    color: black;
+    width: 100%;
+    max-width: 500px;
+    border-left: 7px solid #f5c9a5; }
+    .layout-5 div p {
+      font-size: medium; }
+
+@media (max-width: 1200px) {
+  .layout-5 {
+    margin-left: 2rem; }
+    .layout-5 img {
+      margin-right: 3rem;
+      margin-left: 3rem; } }
+
+@media (max-width: 1100px) {
+  .layout-5 {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column; }
+    .layout-5 img {
+      width: 100%;
+      height: auto;
+      margin-left: 0; }
+    .layout-5 div {
+      margin-top: 1rem;
+      margin-left: 0.8rem;
+      max-width: 800px; }
+      .layout-5 div h1 {
+        font-size: x-large; }
+      .layout-5 div p {
+        font-size: large; } }
+
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 body {
   margin: 0;

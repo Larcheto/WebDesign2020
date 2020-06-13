@@ -1,14 +1,15 @@
-@import './navbar';
-@import './about-us';
-@import './layout-1';
-@import'./layout-2';
-@import'./layout-3';
+@import "./navbar";
+@import "./about-us";
+@import "./layout-1";
+@import "./layout-2";
+@import "./layout-3";
+@import "./layout-5";
 
 * {
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
-body{
+body {
     margin: 0;
     background-color: rgb(252, 250, 243);
 }

@@ -2,13 +2,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    img {
-        max-width: 500px;
-        width: 33.3%;
-        padding: 1.5rem;
-        border-radius: 40px;
-        /*&:hover {
+    .image-element {
+        margin: 0;
+        img {
+            max-width: 500px;
+            height: 390px;
+            padding: 1.5rem;
+            border-radius: 40px;
+            /*&:hover {
         }*/
+        }
     }
 }
 
@@ -20,6 +23,14 @@
         img {
             width: 100%;
             padding-bottom: 2rem;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .layout-2 {
+        .image-element {
+            width: 100%;
+            height: auto;
         }
     }
 }
