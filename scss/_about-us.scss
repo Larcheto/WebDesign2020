@@ -31,6 +31,7 @@
 }
 @media (max-width: 1200px) {
     .about-us-element {
+        justify-content: space-around;
         margin-right: 2rem;
         img {
             margin-right: 3rem;
@@ -48,6 +49,7 @@
             width: 100%;
             height: auto;
             margin-left: 0;
+            margin-top: 3rem;
         }
         div {
             margin-top: 1rem;
