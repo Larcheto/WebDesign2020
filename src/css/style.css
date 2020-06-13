@@ -29,29 +29,40 @@
     padding-right: 2rem;
     max-height: 50px; }
 
-.about-us-element {
-  margin-top: 6rem;
+.content {
   display: flex;
-  width: 100%; }
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.about-us-element {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  width: fit-content; }
+  .about-us-element h1 {
+    border-bottom: 10px #fcdbc0; }
   .about-us-element img {
+    box-shadow: 30px 30px #fcdbc0;
     width: 600px;
-    margin-right: 5.5rem;
-    margin-left: 5.5rem; }
+    margin-right: 5.5rem; }
   .about-us-element div {
     padding: 2rem;
-    background-color: rgba(252, 219, 192, 0.911);
-    color: white;
+    /*background-color:  rgba(252, 219, 192, 0.911);
+        color: white;*/
+    color: black;
     border-radius: 50px;
     width: 100%;
-    max-width: 500px;
-    margin-right: 2rem; }
+    max-width: 500px; }
     .about-us-element div p {
       font-size: medium; }
 
 @media (max-width: 1200px) {
-  .about-us-element img {
-    margin-right: 3rem;
-    margin-left: 3rem; } }
+  .about-us-element {
+    margin-right: 2rem; }
+    .about-us-element img {
+      margin-right: 3rem;
+      margin-left: 3rem; } }
 
 @media (max-width: 1012px) {
   .about-us-element {
@@ -63,6 +74,7 @@
       margin-left: 0; }
     .about-us-element div {
       margin-top: 1rem;
+      margin-left: 2rem;
       max-width: 800px; }
       .about-us-element div h1 {
         font-size: x-large; }
@@ -79,9 +91,9 @@
   align-items: center;
   height: 100vh; }
   .layout-1 div {
-    border-radius: 35px;
-    padding-top: 2rem;
-    background-color: rgba(0, 0, 0, 0.212); }
+    border-radius: 15px;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5); }
   .layout-1 h1 {
     padding-left: 3rem;
     max-width: 1300px;
@@ -89,11 +101,20 @@
     margin: 0;
     color: white; }
 
+@media (max-width: 1100px) {
+  .layout-1 {
+    width: 100%;
+    max-height: 400px;
+    height: 90vh; }
+    .layout-1 h1 {
+      font-size: 3rem; } }
+
 @media (max-width: 1000px) {
   .layout-1 {
     max-width: 1000px;
     width: 100%;
-    max-height: 400px; }
+    max-height: 400px;
+    height: 80vh; }
     .layout-1 h1 {
       font-size: 3rem; } }
 
@@ -121,7 +142,8 @@
   .layout-2 img {
     max-width: 500px;
     width: 33.3%;
-    padding: 1.5rem; }
+    padding: 1.5rem;
+    border-radius: 40px; }
 
 @media (max-width: 1024px) {
   .layout-2 {
@@ -135,6 +157,7 @@
 .layout-3 {
   display: flex;
   align-items: center;
+  margin-bottom: 3rem;
   background-repeat: no-repeat;
   width: 100%; }
   .layout-3 .text-element {
