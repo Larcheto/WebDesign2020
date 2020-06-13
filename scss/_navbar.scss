@@ -1,0 +1,37 @@
+.navbar {
+    z-index: 3;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+
+    ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+    .nav-buttons{
+        display: flex;
+        list-style: none;
+        justify-content: start;
+        flex-direction: row;
+    }
+    a{
+        text-decoration: none;
+        font: 1.2rem sans-serif;
+        padding: 1rem;
+        color: black;
+        display: inline-block;
+        &:hover{
+            color: rgb(255, 255, 255);
+            background-color:rgba(252, 219, 192, 0.911);
+        }
+    }
+    img{
+        padding-right: 2rem;
+        max-height: 50px;
+    }
+}

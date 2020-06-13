@@ -1,0 +1,25 @@
+.layout-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    img {
+        max-width: 500px;
+        width: 33.3%;
+        padding: 1.5rem;
+        border-radius: 40px;
+        &:hover {
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .layout-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+            padding-bottom: 2rem;
+        }
+    }
+}

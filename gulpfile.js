@@ -4,18 +4,18 @@ const browserSync = require('browser-sync').create()
 
 const style = () => {
     return gulp
-        .src('./src/scss/**/*.scss')
+        .src('./scss/**/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('./src/css'))
+        .pipe(gulp.dest('./css'))
 
         .pipe(browserSync.stream())
 }
 
 exports.watch = () => {
     browserSync.init({
-        server: { baseDir: './src' },
+        server: { baseDir: '.' },
     })
-    gulp.watch('./src/scss/**/*.scss', style)
-    gulp.watch('./src/*.html').on('change', browserSync.reload)
-    gulp.watch('./src/js/**/*.js').on('change', browserSync.reload)
+    gulp.watch('./scss/**/*.scss', style)
+    gulp.watch('./*.html').on('change', browserSync.reload)
+    gulp.watch('./js/**/*.js').on('change', browserSync.reload)
 }
