@@ -12,7 +12,6 @@
         border-radius: 15px;
         padding: 2rem;
         background-color: rgba(0, 0, 0, 0.349);
-        //width: fit-content;
     }
     h1 {
         padding-left: 3rem;
@@ -24,10 +23,7 @@
 }
 @media (max-width: 1100px) {
     .layout-1 {
-        // max-width: 1100px;
         width: 100%;
-        max-height: 400px;
-        height: 90vh;
         h1 {
             font-size: 3rem;
         }
@@ -36,9 +32,10 @@
 @media (max-width: 1000px) {
     .layout-1 {
         max-width: 1000px;
-        width: 100%;
-        max-height: 400px;
-        height: 80vh;
+        background-size: cover;
+        div {
+            justify-self: center;
+        }
         h1 {
             font-size: 3rem;
         }
@@ -46,24 +43,16 @@
 }
 @media (max-width: 600px) {
     .layout-1 {
-        max-width: 600px;
-        width: 100%;
-        max-height: 300px;
         h1 {
-            //padding-left: 3rem;
             font-size: 2rem;
         }
     }
 }
 @media (max-width: 400px) {
     .layout-1 {
-        max-width: 600px;
-        width: 100%;
-        max-height: 200px;
         h1 {
-            //align-self: center;
+            align-self: center;
             padding-left: 1rem;
-            font-size: 1rem;
         }
     }
 }

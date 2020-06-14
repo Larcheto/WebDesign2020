@@ -11,7 +11,6 @@
     img {
         box-shadow: 30px 30px rgb(245, 201, 165);
         width: 600px;
-        //display: block;
         margin-right: 5.5rem;
     }
     div {
@@ -31,6 +30,9 @@
         margin-left: 2rem;
         align-items: center;
         justify-content: space-around;
+        h1 {
+            margin-top: 5rem;
+        }
         img {
             margin-right: 3rem;
         }
@@ -38,7 +40,6 @@
 }
 @media (max-width: 1100px) {
     .layout-5 {
-        //padding-top: 2rem;
         margin-bottom: 2rem;
         display: flex;
         flex-direction: column;
@@ -53,6 +54,7 @@
             margin-left: 0.8rem;
             max-width: 800px;
             h1 {
+                margin-top: 5rem;
                 font-size: x-large;
             }
             p {
